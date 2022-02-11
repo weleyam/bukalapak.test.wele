@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="69.037">
+<testcase classname="Login bukalapak functionality" name="Check login is successful with valid username and valid password credentials" time="42.953">
+<system-out><![CDATA[Given user open bukalapak.com page..........................................passed
+And user clicks button login on the landing page............................passed
+Then user redirected to login page..........................................passed
+When user enters username with value test.wele@gmail.com....................passed
+And user clicks on lanjut button............................................passed
+Then user can see password textbox and login button.........................passed
+When user enters password with value Testing12345...........................passed
+And user clicks login button................................................passed
+Then user is navigated to the home page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login bukalapak functionality" name="Check login is successful with valid username and invalid password credentials" time="25.234">
+<system-out><![CDATA[Given user open bukalapak.com page..........................................passed
+And user clicks button login on the landing page............................passed
+Then user redirected to login page..........................................passed
+When user enters username with value test.wele@gmail.com....................passed
+And user clicks on lanjut button............................................passed
+Then user can see password textbox and login button.........................passed
+When user enters password with value ini-passwrod-salah.....................passed
+And user clicks login button................................................passed
+Then user see error message incorect password...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
