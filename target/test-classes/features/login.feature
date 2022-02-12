@@ -1,4 +1,4 @@
-@regressionLogin
+@regressionUI
 Feature: Login bukalapak functionality
 
   Background: Browser is open and user on the login page

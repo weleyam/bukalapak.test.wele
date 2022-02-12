@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty",
                 "junit:target/JUnitReports.xml", "html:target/HtmlReports.html",
                 "json:target/JSONReport.json"}, monochrome = true,
-        tags = "@regressionLogin"
+        tags = "@regressionUI or @regressionApi"
 )
 public class CucumberRunner {
 }

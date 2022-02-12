@@ -23,6 +23,8 @@ public class LoginSteps extends MatcherAssert {
     LandingPage landingPage;
     LoginPage loginPage;
 
+    //Comment hooks if you want to run api //@Before & @After
+    //Uncomment hooks if you want to run login.feature //@Before & @After
     @Before
     public void browserSetup() {
         String projectPath = System.getProperty("user.dir");

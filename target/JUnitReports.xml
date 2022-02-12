@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="69.037">
-<testcase classname="Login bukalapak functionality" name="Check login is successful with valid username and valid password credentials" time="42.953">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="102.831">
+<testcase classname="Login bukalapak functionality" name="Check login is successful with valid username and valid password credentials" time="40.622">
 <system-out><![CDATA[Given user open bukalapak.com page..........................................passed
 And user clicks button login on the landing page............................passed
 Then user redirected to login page..........................................passed
@@ -12,7 +12,7 @@ And user clicks login button................................................pass
 Then user is navigated to the home page.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login bukalapak functionality" name="Check login is successful with valid username and invalid password credentials" time="25.234">
+<testcase classname="Login bukalapak functionality" name="Check login is successful with valid username and invalid password credentials" time="25.134">
 <system-out><![CDATA[Given user open bukalapak.com page..........................................passed
 And user clicks button login on the landing page............................passed
 Then user redirected to login page..........................................passed
@@ -22,6 +22,34 @@ Then user can see password textbox and login button.........................pass
 When user enters password with value ini-passwrod-salah.....................passed
 And user clicks login button................................................passed
 Then user see error message incorect password...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test bukalapak api" name="[GET] schema validator with data id=3" time="17.348">
+<system-out><![CDATA[Given user set data id as 3.................................................passed
+When user get data with specific id.........................................passed
+Then the response should be have valid type data............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test bukalapak api" name="[GET] schema validator with data id=2" time="5.059">
+<system-out><![CDATA[Given user set data id as 2.................................................passed
+When user get data with specific id.........................................passed
+Then the response should be have valid type data............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test bukalapak api" name="[GET] schema validator with data id=1" time="5.2">
+<system-out><![CDATA[Given user set data id as 1.................................................passed
+When user get data with specific id.........................................passed
+Then the response should be have valid type data............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test bukalapak api" name="[POST] add data to api" time="7.921">
+<system-out><![CDATA[Given user set data title as recomendation..................................passed
+And user set data body as motorcycle........................................passed
+And user set data userId as 12..............................................passed
+When user add data to api...................................................passed
+Then the response title should be recomendation.............................passed
+And the response body should be motorcycle..................................passed
+And the response userId should be 12........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
